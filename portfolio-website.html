@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karthik Murali - The Dark Knight of Data Science</title>
+    <style>
+        /* Previous styles remain the same */
+        :root {
+            --purple: #9333EA;
+            --yellow: #FFD700;
+            --cyan: #06B6D4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: #111;
+            color: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Cursor Effect Styles */
+        .cursor-trail {
+            width: 10px;
+            height: 10px;
+            background: var(--purple);
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            opacity: 0.7;
+            transform: translate(-50%, -50%);
+            transition: width 0.2s, height 0.2s, opacity 0.2s;
+            z-index: 9999;
+            mix-blend-mode: screen;
+            filter: blur(2px);
+        }
+
+        /* Rest of the previous styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        nav a {
+            color: var(--cyan);
+            text-decoration: none;
+            margin-left: 2rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--purple);
+        }
+
+        .contact-btn {
+            background-color: var(--cyan);
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            color: #000;
+            font-weight: 500;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: var(--purple);
+            margin: 1rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .hero h2 {
+            color: var(--purple);
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .hero p {
+            max-width: 800px;
+            margin: 1rem auto;
+            color: #ccc;
+        }
+
+        .projects {
+            padding: 4rem 0;
+        }
+
+        .projects-title {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--purple);
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            padding: 1.5rem;
+            border: 1px solid #333;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-title {
+            color: var(--yellow);
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .tools {
+            margin-top: 1rem;
+            color: #888;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .connect {
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .connect h2 {
+            color: var(--purple);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .social-links {
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            color: var(--cyan);
+            text-decoration: none;
+            margin: 0 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .social-links a:hover {
+            color: var(--purple);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Karthik Murali</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#" class="contact-btn">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>🦇 The Dark Knight of Data Science</h1>
+            <h2>Student | AI/ML Enthusiast | Future FinTech & Quantum Expert</h2>
+            <p>I am a student in the IITM BS Degree in Data Science, currently at the Diploma level. I aspire to explore Finance, Quantum Physics, and AI/ML to bridge data-driven insights with cutting-edge technologies.</p>
+        </section>
+
+        <section class="projects">
+            <h2 class="projects-title">💻 Gotham Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3 class="project-title">🚴‍♂️ Business Intelligence Dashboard</h3>
+                    <p>Developed an interactive dashboard processing 10,000+ transactions, providing strategic insights into sales performance.</p>
+                    <div class="tools">🛠 Tools: Power BI, Excel, SQL</div>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">👥 Customer Segmentation with KMeans</h3>
+                    <p>Implemented KMeans clustering to classify customers based on monetary value, purchase frequency, and recency.</p>
+                    <div class="tools">🛠 Tools: Python, Pandas, NumPy, Scikit-Learn</div>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">📱 Telco Customer Churn Analysis</h3>
+                    <p>Built a Customer Churn Prediction Model using SQL analysis and Random Forest to optimize telecom retention strategies.</p>
+                    <div class="tools">🛠 Tools: SQL, Python, Machine Learning</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="connect">
+            <h2>🦇 Connect with the Dark Knight</h2>
+            <p>Let's discuss AI, Finance, Quantum Physics, and Data Science!</p>
+            <div class="social-links">
+                <a href="#">🔗 GitHub</a>
+                <a href="#">🔗 LinkedIn</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Karthik Murali | The Dark Knight of Data Science</p>
+    </footer>
+
+    <script>
+        // Cursor trail effect
+        const numTrails = 12;
+        const trails = [];
+        
+        // Create cursor trail elements
+        for (let i = 0; i < numTrails; i++) {
+            const trail = document.createElement('div');
+            trail.className = 'cursor-trail';
+            document.body.appendChild(trail);
+            trails.push({
+                element: trail,
+                x: 0,
+                y: 0,
+                delay: i * 2
+            });
+        }
+
+        // Track mouse position
+        let mouseX = 0;
+        let mouseY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        // Animation loop
+        function animate() {
+            trails.forEach((trail, index) => {
+                // Calculate trail position with delay
+                const dx = mouseX - trail.x;
+                const dy = mouseY - trail.y;
+                
+                trail.x += dx * 0.2;
+                trail.y += dy * 0.2;
+                
+                // Update trail element position
+                trail.element.style.transform = `translate(${trail.x}px, ${trail.y}px)`;
+                
+                // Scale trails based on index
+                const scale = 1 - (index / numTrails) * 0.6;
+                trail.element.style.width = `${10 * scale}px`;
+                trail.element.style.height = `${10 * scale}px`;
+                trail.element.style.opacity = scale * 0.7;
+            });
+            
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+    </script>
+</body>
+</html>
